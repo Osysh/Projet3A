@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Webcam Comparison</title>
+        <link rel = "stylesheet" type = "text/css" href = "css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id='title'> CAM CLONE </div>
+        <div id='cam_section'>
+            <div class='container' id = 'main_user'>
+                <video id="video_webcam" autoplay playsinline width="250" height="187"></video>
+                <p>SOURCE</p>
+            </div>
+            <div class='container' id = 'incoming_cam_rest'>
+                <canvas id='canvas_rest' width="250" height="187"></canvas>
+                <p>REST API</p>
+            </div>
+            <div class='container' id = 'incoming_cam_socket'>
+                <canvas id='picture' width="250" height="187"></canvas>
+                <p>WEBSOCKET</p>
+            </div>
+        </div>
+        <div id='buttons'>
+            <button class='button_bar' id="play"><i class="fa fa-play" aria-hidden="true"></i></button>
+            <button class='button_bar' id="stop"><i class="fa fa-stop" aria-hidden="true"></i></button>
+            <button class='button_bar' id="take_snap"><i class="fa fa-camera" aria-hidden="true"></i></button>
+        </div>
+    </body>
+    <script type="text/javascript" src='./index.js'></script>
+</html>
